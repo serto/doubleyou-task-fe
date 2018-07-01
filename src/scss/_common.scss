@@ -1,0 +1,39 @@
+
+body {
+  color: $c-bodyColor;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  border-bottom: 2px solid $c-bodyColor;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.submenu {
+
+  li {
+    cursor: pointer;
+    list-style: none;
+    padding: 6px 4px;
+    text-align: left;
+
+    &.showMore {
+      color: $c-whiteColor;
+      text-align: right;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-collapse {
+    display: none;
+  }
+
+  &-showMenu {
+    display: block;
+  }
+}

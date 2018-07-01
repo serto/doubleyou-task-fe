@@ -1,0 +1,23 @@
+
+.content {
+	display: flex;
+
+  &-images {
+    flex: 0 0 30%;
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+  }
+  &-text {
+    flex: 0 0 66%;
+    padding: 0 2%;
+
+    &-rec {
+      text-align: right;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+  }
+}

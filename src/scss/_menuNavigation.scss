@@ -1,0 +1,91 @@
+
+form {
+  input {
+    border: 1px solid $c-bodyColor;
+    margin: 4px 8px 4px 0;
+    padding: 2px;
+  }
+
+  button {
+    background: -webkit-linear-gradient(top, $c-gradient-topButton, $c-gradient-bottomButton);
+    background: -o-linear-gradient(top, $c-gradient-topButton, $c-gradient-bottomButton);
+    background: linear-gradient(to bottom, $c-gradient-topButton, $c-gradient-bottomButton);
+    border: none;
+    border-radius: 10px;
+    color: $c-whiteColor;
+    padding: 2px 8px;
+  }
+}
+
+.topMenu {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &-login {
+    background: -webkit-linear-gradient(top, $c-gradient-topLogin, $c-gradient-bottomLogin);
+    background: -o-linear-gradient(top, $c-gradient-topLogin, $c-gradient-bottomLogin);
+    background: linear-gradient(to bottom, $c-gradient-topLogin, $c-gradient-bottomLogin);
+
+    flex: 1 1 auto;
+    font-size: 10px;
+    padding: 3px 6px;
+    text-align: left;
+
+  }
+
+  &-section {
+    background: -webkit-linear-gradient(top, $c-gradient-top, $c-gradient-bottom);
+    background: -o-linear-gradient(top, $c-gradient-top, $c-gradient-bottom);
+    background: linear-gradient(to bottom, $c-gradient-top, $c-gradient-bottom);
+
+    border-right: 1px solid #000;
+    cursor: pointer;
+    flex: 1 1 auto;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+
+    &:first-child {
+      border-radius: 0 0 0 10px;
+      -moz-border-radius: 0 0 0 10px;
+      -webkit-border-radius: 0 0 0 10px;
+    }
+
+    &:last-child {
+      border-radius: 0 10px 0 0;
+      -moz-border-radius: 0 10px 0 0;
+      -webkit-border-radius: 0 10px 0 0;
+      border-right: none;
+    }
+
+    &:hover {
+      opacity: .8;
+
+      .topMenu-section-submenu {
+        display: block;
+      }
+    }    
+
+    a {
+      color: $c-whiteColor;
+      line-height: 34px;
+      text-decoration: none;
+    }
+
+    &-submenu {
+      background: -webkit-linear-gradient(top, $c-gradient-bottom, $c-gradient-top);
+      background: -o-linear-gradient(top, $c-gradient-bottom, $c-gradient-top);
+      background: linear-gradient(to bottom, $c-gradient-bottom, $c-gradient-top);
+      display: none;
+      left: 0;
+      position: absolute;
+      top: 45px;
+      width: 100%;
+    }
+
+  }
+
+}
