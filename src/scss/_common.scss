@@ -19,6 +19,10 @@ h2 {
     padding: 6px 4px;
     text-align: left;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     &.showMore {
       color: $c-whiteColor;
       text-align: right;
